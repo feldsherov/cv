@@ -36,6 +36,8 @@ includefoot]{geometry}
 % Turn off page numbers
 \pagenumbering{gobble}
 
+\RequirePackage{libertine}
+
 % \newcommand{\headlinecolor}{\normalcolor}
 % \RequirePackage{xcolor}
 % \definecolor{slcolor}{HTML}{882B21}
@@ -58,7 +60,8 @@ includefoot]{geometry}
 
 \newenvironment{cvsection}[1] {
   \begin{flushleft}
-  {\HLight\fontsize{15}{16}\selectfont\textbf{#1}\\}
+  {\HLight\fontsize{15}{25}\selectfont
+    \textbf{\addfontfeature{LetterSpace=7.0}{#1}}\\ }
   \vspace{2mm}
 }
 {\end{flushleft}}
@@ -69,7 +72,7 @@ includefoot]{geometry}
     {\HLight #2 \\}
   \fi
   \if #3\empty \else
-  {\HLight\selectfont\textbf{#3} \\}
+  {\HLight\selectfont\textbf{\addfontfeature{LetterSpace=7.0}#3} \\}
   \fi
   \vspace{2mm}
 }

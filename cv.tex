@@ -2,10 +2,10 @@
 \usepackage[english]{babel}
 
 
-\newcommand{\listbullet}{\small$\; \bullet \;$}
+\newcommand{\listbullet}{$\; \cdot \;$}
 
 \author{Svyatoslav Feldsherov}
-\contacts{feldsherov@me.com | +7-916-966-18-12}
+\contacts{feldsherov.sv@gmail.com | +7-916-966-18-12}
 \begin{document}
 
 \maketitle
@@ -14,14 +14,27 @@
 \begin{paracol}{2}
 \setlength{\columnsep}{2em}
 
-\begin{leftcolumn}
-\begin{cvsection}{KEY SKILLS}
-   C++\listbullet Python \listbullet DevOps
+\begin{cvsection}{EDUCATION}
+  \cvinfobox{MOCSOW STATE UNIVERSITY}{2013-2019 | MS in Math}{GPA: 5.0/5.0}
+  \cvinfobox{YANDEX SCHOOL OF DATA ANALYSIS}{2016-2018 | CS Track}
+    {Yandex School of Data Analysis is a Machine Learning
+     and Computer Science school in Moscow.}
+  \cvinfobox{TECHSPHERE}{2016-2017 | Data analysis and ML} {Techsphere is an educational project hosted
+    by Mail.ru Group and Computer Science faculty
+    at Moscow State University.}
 \end{cvsection}
 
+\begin{leftcolumn}
+\begin{cvsection}{KEY SKILLS}
+   SWE\listbullet Backend \listbullet DevOps
+\end{cvsection}
+
+\begin{cvsection}{LANGUAGES}
+  C++\listbullet Python \listbullet Java
+\end{cvsection}
 \begin{cvsection}{TECHNOLOGIES}
-  grpc\listbullet Protobuf\listbullet bazel \listbullet Docker \\
-  MySQL \listbullet Sqlite \listbullet Django \listbullet git \\
+  gRPC\listbullet protobuf\listbullet Bazel \listbullet Docker \\
+  MySQL \listbullet SQLite \listbullet Django \listbullet git \\
   SVN \listbullet Hadoop \\
 \end{cvsection}
 
@@ -29,32 +42,25 @@
 
   {\HLight
     Algorithms and Data structures\\
-    Advanced Marchine Leaadning\\
-    Large scale marchine learning\\
-    Natural langauge processing\\
+    Advanced Machine Leadning\\
+    Bayesian Methods for Machine Learning\\
     Computational complexity\\
+    Information theory\\
+    Large-scale machine learning\\
+    Natural language processing\\
     Numerical methods\\
+    Operating systems\\
   }
 \end{cvsection}
 
-\begin{cvsection}{EDUCATION}
-  \cvinfobox{MOCSOW STATE UNIVERSITY}{2019 | MS in Math}{GPA: 5.0/5.0}
-  \cvinfobox{YANDEX SCHOOL OF DATA ANALYSIS}{2019 | CS Track}
-    {Yandex School of Data Analysis is Machine Learning
-     and Computer Science school in Moscow.}
-  \cvinfobox{Techscphere}{2017 | Data analysis and ML} {Techsphere is an educational project hosted
-    by Mail.ru Group and Computer Science faculty
-    at Moscow State University.}
-\end{cvsection}
 \end{leftcolumn}
 
 \begin{rightcolumn}
-\begin{cvsection}{EXPIRIENCE}
-  \cvinfobox{Google}{07.2018-10.2018 | Software Ingeneering Intern}
-  {Worked on Shooping Data Quality team. Primary C++, Map-Reduce, Grps.
-   Designed and implemented infrastructe for intellectual scheduling merchants 
-   review. This infractructe helped to improve existing scheduling logic
-   and allowed to migrate from several legacy services.}
+\begin{cvsection}{EXPERIENCE}
+  \cvinfobox{Google}{07.2018-10.2018 | Software Engineering Intern}
+  {Worked on Shopping Data Quality team. Primary C++, MapReduce, gRPC.
+   Designed and implemented an infrastructure for intellectual scheduling of merchants review. This infrastructure helped to improve existing scheduling logic
+   and allowed the team to migrate from several legacy services.}
   \cvinfobox{Yandex Ads}{03.2017-06.2018 | Junior Backend Developer}
   {Designed and implemented distributed log collection and event
    plotting system using internal technologies, including YT — Bigtable-like
@@ -62,28 +68,35 @@
    Used coroutine-based web server and batch requests in order
    to handle required RPS on a small number of servers and not to overload
    other services. \\
-   This feature enabled frontend team to log any client-side
+   This feature enabled the frontend team to log any client-side
    event (usually JS code in a browser) and plot number of any events on
    clients in real time.}
 
   \cvinfobox{Mail.ru Group, Tarantool}
-  {03.2017-06.2018 | Software Engineering Intern}
-  {Tarantool is an in-memory NoSQL database.
-   It is implemented in C with some C++.\\
+  {02.2016-12.2016 | Software Engineering Intern}
+  {Tarantool is an in-memory NoSQL database implemented in C with some C++.\\
    Implemented a proof of concept version of SQL in Tarantool.
-   We combined SQLite parser and execution engine with Tarantool
-   internal structures (B+*-tree).\\
+   We combined SQLite parser and execution engine with Tarantool internal structures (B+*-tree).\\
    Fixed some bugs in Tarantool test engine.\\
    Added intrusive heap to Tarantool data structures library.}
 \end{cvsection}
 
-\begin{cvsection}{PERSONAL PROJENCTS}
-  \cvinfobox{Celebrity Faces}{Service to find celerities looking like you.}
-  {As project in Yandex Data Analysis school.}
-  \cvinfobox{Search engine for cooking cite.}
+\begin{cvsection}{PERSONAL PROJECTS}
+  \cvinfobox{Service to find celebrities looking like you}{}
+  {I implemented HNSW-kNN index in C++ using gRPC to
+    handle requests to the index.}
+  \cvinfobox{Search engine for cooking website}
+  {}
   {Crash-safe search engine with search results
-   ranking and spell checking for popular Russian cooking recipe website.}
-  {As project in Yandex Data Analysis school.}
+   ranking and spell checker for popular Russian cooking recipe website.}
+\end{cvsection}
+\begin{cvsection}{COMPETITIVE PROGRAMMING}
+  \cvinfobox{Russian National Olympiad in Informatics}
+  {2012 | prizewinner}
+  {}
+  \cvinfobox{Russian National Olympiad in Informatics}
+  {2011 | prizewinner}
+  {}
 \end{cvsection}
 
 \end{rightcolumn}
