@@ -42,6 +42,12 @@ includefoot]{geometry}
 % \RequirePackage{xcolor}
 % \definecolor{slcolor}{HTML}{882B21}
 
+% Vertical skip lengthis
+\newlength{\cvsectionverticalskip}
+\setlength{\cvsectionverticalskip}{2mm}
+
+\newlength{\cvinfoverticalskip}
+\setlength{\cvinfoverticalskip}{2mm}
 
 \DeclareOption{onecolumn}{\OptionNotUsed}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
@@ -62,7 +68,7 @@ includefoot]{geometry}
   \begin{flushleft}
   {\HLight\fontsize{15}{25}\selectfont
     \textbf{\addfontfeature{LetterSpace=7.0}{#1}}\\ }
-  \vspace{2mm}
+  \vspace{\cvsectionverticalskip}
 }
 {\end{flushleft}}
 
@@ -74,6 +80,6 @@ includefoot]{geometry}
   \if #3\empty \else
   {\HLight\selectfont\textbf{\addfontfeature{LetterSpace=7.0}#3} \\}
   \fi
-  \vspace{2mm}
+  \vspace{\cvinfoverticalskip}
 }
 

@@ -5,7 +5,7 @@
 \newcommand{\listbullet}{$\; \cdot \;$}
 
 \author{Svyatoslav Feldsherov}
-\contacts{feldsherov.sv@gmail.com | +7-916-966-18-12}
+\contacts{svyat@feldsherov.name | +7-916-966-18-12}
 \begin{document}
 
 \maketitle
@@ -13,6 +13,25 @@
 \columnratio{0.3,0.7}
 \begin{paracol}{2}
 \setlength{\columnsep}{2em}
+\setlength{\cvsectionverticalskip}{1mm}
+\setlength{\cvinfoverticalskip}{1mm}
+
+\begin{leftcolumn}
+\begin{cvsection}{KEY SKILLS}
+   SWE\listbullet Backend \listbullet Concurency \\
+   Algorithms \listbullet Distributed systems \\
+   DevOps
+\end{cvsection}
+
+\begin{cvsection}{LANGUAGES}
+  C++\listbullet Python \listbullet Java
+\end{cvsection}
+
+\begin{cvsection}{TECHNOLOGIES}
+  grpc \listbullet protobuf \listbullet Docker \\
+  SQLite \listbullet MySQL \listbullet CMake \\
+  git \listbullet SVN  \listbullet Hadoop \listbullet Django \\
+\end{cvsection}
 
 \begin{cvsection}{EDUCATION}
   \cvinfobox{MOCSOW STATE UNIVERSITY}{2013-2019 | MS in Math}{GPA: 5.0/5.0}
@@ -24,25 +43,12 @@
     at Moscow State University.}
 \end{cvsection}
 
-\begin{leftcolumn}
-\begin{cvsection}{KEY SKILLS}
-   SWE\listbullet Backend \listbullet DevOps
-\end{cvsection}
-
-\begin{cvsection}{LANGUAGES}
-  C++\listbullet Python \listbullet Java
-\end{cvsection}
-\begin{cvsection}{TECHNOLOGIES}
-  gRPC\listbullet protobuf\listbullet Bazel \listbullet Docker \\
-  MySQL \listbullet SQLite \listbullet Django \listbullet git \\
-  SVN \listbullet Hadoop \\
-\end{cvsection}
 
 \begin{cvsection}{COURSEWORK}
 
   {\HLight
     Algorithms and Data structures\\
-    Advanced Machine Leadning\\
+    Advanced Machine Learning\\
     Bayesian Methods for Machine Learning\\
     Computational complexity\\
     Information theory\\
@@ -57,8 +63,18 @@
 
 \begin{rightcolumn}
 \begin{cvsection}{EXPERIENCE}
+  \cvinfobox{Yandex Search}{ 06.2020-present | Teamlead}
+  {My team is working on a company-wide microservices framework. 1000 microservices, 1 billion requests per second processed by our component.\\
+  C++ for data plain, Python for control plain, and tests/infrastructure.\\
+  Main goals are 99.999\% availability achieved, Http transport replaced with faster
+  implementation, distributed tracing over our framework speedup from minute to 1-3sec per request.}
+  \cvinfobox{Yandex Search}{ 11.2018-06.2020 | Software Engineer}
+  {Worked on Search Infrastructure team. C++, Python, grpc, networking.
+  Design and implement SDCH support at Search Engine Result Page.
+  C++ backend with custom SDCH implementation.\\
+  Improve search query preprocessing pipeline. Reimplement part of business logic with C++, fix some architectural problems, a bit speed up search}
   \cvinfobox{Google}{07.2018-10.2018 | Software Engineering Intern}
-  {Worked on Shopping Data Quality team. Primary C++, MapReduce, gRPC.
+  {Worked on Shopping Data Quality team. Primary C++, MapReduce, Stubby.
    Designed and implemented an infrastructure for intellectual scheduling of merchants review. This infrastructure helped to improve existing scheduling logic
    and allowed the team to migrate from several legacy services.}
   \cvinfobox{Yandex Ads}{03.2017-06.2018 | Junior Backend Developer}
