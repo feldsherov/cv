@@ -1,11 +1,11 @@
 \documentclass[12pt]{cutecv}
 \usepackage[english]{babel}
-
+\usepackage{hyperref}
 
 \newcommand{\listbullet}{$\; \cdot \;$}
 
 \author{Svyatoslav Feldsherov}
-\contacts{svyat@feldsherov.name | +7-916-966-18-12}
+\contacts{svyat@feldsherov.name | +972-53-451-4602 }
 \begin{document}
 
 \maketitle
@@ -18,19 +18,20 @@
 
 \begin{leftcolumn}
 \begin{cvsection}{KEY SKILLS}
-   SWE\listbullet Backend \listbullet Concurency \\
-   Algorithms \listbullet Distributed systems \\
-   DevOps
+  SWE \listbullet User space Networking  \\
+   Distributed systems \listbullet Concurency  \\
+   Performance \listbullet Algorithms \\
+   Backend \listbullet DevOps 
 \end{cvsection}
 
 \begin{cvsection}{LANGUAGES}
-  C++\listbullet Python \listbullet Java
+  C++\listbullet Python \listbullet Go
 \end{cvsection}
 
 \begin{cvsection}{TECHNOLOGIES}
+  Linux \listbullet TCP IP  \listbullet  HTTP \listbullet  HTTP2 \\
   grpc \listbullet protobuf \listbullet Docker \\
-  SQLite \listbullet MySQL \listbullet CMake \\
-  git \listbullet SVN  \listbullet Hadoop \listbullet Django \\
+  git \\
 \end{cvsection}
 
 \begin{cvsection}{EDUCATION}
@@ -63,23 +64,35 @@
 
 \begin{rightcolumn}
 \begin{cvsection}{EXPERIENCE}
-  \cvinfobox{Yandex Search}{ 06.2020-present | Teamlead}
-  {My team is working on a company-wide microservices framework, which serves
+  \cvinfobox{Google Cloud, Virtual Network Dataplane Telemetry}{ 08.2022-present | Software Engineer}
+  {Working about packet sampling in virtual network data plane. Main part is instrumentation of virtual
+  networking components with packet sampling. \\
+  Main technologies are internal DPDK-like framework, C++. 
+  And regular grpc and C++ backend for packet samples processing. \\
+  Main achievements are instrumnetaion a new virtual networking plane component from scratch,
+  2-10\% fast path packet processing speedup by moving expencive syscalls from fastpath, introduce framework for 
+  simplification of packet drops debugging.}
+  
+  \cvinfobox{Yandex Search}{ 06.2020-06.2022 | Teamlead}
+  {My team was working on a company-wide microservices framework, which serves
   1000 microservices, 10 millions requests per second.\\
-  We use C++ for data plane, Python for control plane, and tests/infrastructure.\\
+  We used C++ for data plane, Python for control plane, and tests/infrastructure.\\
   Main achievements are 99.999\% availability, HTTP transport replacement
   with faster implementation, speedup of distributed tracing over our
   framework from minute to 1-3sec per request.}
+
   \cvinfobox{Yandex Search}{ 11.2018-06.2020 | Software Engineer}
   {Worked on Search Infrastructure team. C++, Python, grpc, networking.
   Designed and implemented SDCH support for Search Engine Result Page.
   Main part was C++ backend with custom SDCH implementation.\\
   Improved search query preprocessing pipeline. Reimplemented part of business logic with C++, fixed some architectural problems, got speedup.}
+  
   \cvinfobox{Google}{07.2018-10.2018 | Software Engineering Intern}
   {Worked on Shopping Data Quality team. Primary C++, MapReduce, Stubby.
    Designed and implemented an infrastructure for intellectual scheduling of merchants review. This infrastructure helped to improve existing scheduling logic
    and allowed the team to migrate from several legacy services.}
-  \cvinfobox{Yandex Ads}{03.2017-06.2018 | Junior Backend Developer}
+  
+   \cvinfobox{Yandex Ads}{03.2017-06.2018 | Junior Backend Developer}
   {Designed and implemented distributed log collection and event
    plotting system using internal technologies, including YT — Bigtable-like
    storage with MapReduce framework on top of it. \\
@@ -99,15 +112,6 @@
    Added intrusive heap to Tarantool data structures library.}
 \end{cvsection}
 
-\begin{cvsection}{PERSONAL PROJECTS}
-  \cvinfobox{Service to find celebrities looking like you}{}
-  {I implemented HNSW-kNN index in C++ using gRPC to
-    handle requests to the index.}
-  \cvinfobox{Search engine for cooking website}
-  {}
-  {Crash-safe search engine with search results
-   ranking and spell checker for popular Russian cooking recipe website.}
-\end{cvsection}
 \begin{cvsection}{COMPETITIVE PROGRAMMING}
   \cvinfobox{Russian National Olympiad in Informatics}
   {2012 | prizewinner}
