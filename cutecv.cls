@@ -3,8 +3,7 @@
 
 % Use article class as the base class.
 \LoadClass{article}
-% Use helvetica fontfamily
-% \RequirePackage{helvet}
+
 \RequirePackage{fontspec}
 \setmainfont[
    ItalicFont     = HelveticaNeue-Italic,
@@ -35,12 +34,6 @@ includefoot]{geometry}
 
 % Turn off page numbers
 \pagenumbering{gobble}
-
-\RequirePackage{libertine}
-
-% \newcommand{\headlinecolor}{\normalcolor}
-% \RequirePackage{xcolor}
-% \definecolor{slcolor}{HTML}{882B21}
 
 % Vertical skip lengthis
 \newlength{\cvsectionverticalskip}
