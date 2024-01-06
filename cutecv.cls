@@ -10,7 +10,7 @@
    BoldFont       = HelveticaNeue-Bold,
    BoldItalicFont = HelveticaNeue-BoldItalic]{HelveticaNeue}
 \newfontfamily\HLight[
-   ItalicFont     = HelveticaNeue-LightItalic,
+   ItalicFont     = HelveticaNeue-Italic,
    BoldFont       = HelveticaNeue-UltraLight,
    BoldItalicFont = HelveticaNeue-UltraLightItalic]{HelveticaNeue-Light}
 

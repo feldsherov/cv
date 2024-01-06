@@ -18,8 +18,8 @@
 
 \begin{leftcolumn}
 \begin{cvsection}{KEY SKILLS}
-  SWE \listbullet User space Networking  \\
-   Distributed systems \listbullet Concurency  \\
+   SWE \listbullet User-space networking  \\
+   Distributed systems \listbullet Concurrency  \\
    Performance \listbullet Algorithms \\
    Backend \listbullet DevOps 
 \end{cvsection}
@@ -30,34 +30,28 @@
 
 \begin{cvsection}{TECHNOLOGIES}
   Linux \listbullet Networking \\
-  grpc \listbullet protobuf \listbullet Docker \\
-  git \\
+  gRPC \listbullet Protobuf \listbullet Docker \\
+  Git \\
+\end{cvsection}
+
+\begin{cvsection}{FUN FACTS}
+  \listbullet \href{https://lore.kernel.org/lkml/CACgs1VAo5AD-6sw2QCNKhRtoOy99XNP24dAWUrdryJKhCxwsMA@mail.gmail.com/}{Fixed (tiny) crash in Linux kernel} \\
+  \listbullet \href{https://yatalks.yandex.ru/en/speakers/svyatoslav-feldsherov}{Gave a talk on YaTalks 2023} \\
 \end{cvsection}
 
 \begin{cvsection}{EDUCATION}
-  \cvinfobox{MOCSOW STATE UNIVERSITY}{2013-2019 | MS in Math}{GPA: 5.0/5.0}
+  \cvinfobox{MOSCOW STATE UNIVERSITY}{2013-2019 | MS in Math}{GPA: 5.0/5.0}
   \cvinfobox{YANDEX SCHOOL OF DATA ANALYSIS}{2016-2018 | CS Track}
-    {Yandex School of Data Analysis is a Machine Learning
-     and Computer Science school in Moscow.}
-  \cvinfobox{TECHSPHERE}{2016-2017 | Data analysis and ML} {Techsphere is an educational project hosted
+    {Machine Learning and Computer Science school in Moscow.}
+  \cvinfobox{TECHSPHERE}{2016-2017 | Data analysis and ML} {Educational project hosted
     by Mail.ru Group and Computer Science faculty
     at Moscow State University.}
 \end{cvsection}
 
-
-\begin{cvsection}{COURSEWORK}
-
-  {\HLight
-    Algorithms and Data structures\\
-    Advanced Machine Learning\\
-    Bayesian Methods for Machine Learning\\
-    Computational complexity\\
-    Information theory\\
-    Large-scale machine learning\\
-    Natural language processing\\
-    Numerical methods\\
-    Operating systems\\
-  }
+\begin{cvsection}{COMPETITIONS}
+  \cvinfobox{Russian National Olympiad in Informatics}
+  {2011, 2012 | Prizewinner}
+  {}
 \end{cvsection}
 
 \end{leftcolumn}
@@ -65,16 +59,16 @@
 \begin{rightcolumn}
 \begin{cvsection}{EXPERIENCE}
   \cvinfobox{Google Cloud, Virtual Network Dataplane Telemetry}{ 08.2022-present | Software Engineer}
-  {Working about packet sampling in virtual network data plane. Main part is instrumentation of virtual
+  {Working on packet sampling in virtual network data plane. Main part is instrumentation of virtual
   networking components with packet sampling. \\
-  Main technologies are internal DPDK-like framework, C++ in network data plane plus grpc and C++ for packet samples processing. \\
-  Main achievements are instrumnetaion of a new virtual networking data plane component,
-  2-10\% fast path packet processing speedup by moving expencive syscalls from fast path, introduce framework for 
+  Technologies: internal DPDK-like framework, C++ in network data plane plus GRPC and C++ for packet samples processing. \\
+  Main achievements are instrumentation of a new data plane component with packet sampling,
+  2-10\% fast path packet processing speedup by moving expensive syscalls out of fast path, and framework for 
   simplification of packet drops debugging.}
   
-  \cvinfobox{Yandex Search}{ 06.2020-06.2022 | Teamlead}
-  {My team was working on a company-wide microservices framework, which serves
-  1000 microservices, 10 millions requests per second.\\
+  \cvinfobox{Yandex Search}{ 06.2020-06.2022 | Software Engineer / Team Lead}
+  {Team I led was working on a company-wide microservices framework, which serves
+  1000 microservices, 10 million requests per second.\\
   We used C++ for data plane, Python for control plane, and tests/infrastructure.\\
   Main achievements are 99.999\% availability, HTTP transport replacement
   with faster implementation, speedup of distributed tracing over our
@@ -84,7 +78,8 @@
   {Worked on Search Infrastructure team. C++, Python, grpc, networking.
   Designed and implemented SDCH support for Search Engine Result Page.
   Main part was C++ backend with custom SDCH implementation.\\
-  Improved search query preprocessing pipeline. Reimplemented part of business logic with C++, fixed some architectural problems, got speedup.}
+  Improved search query preprocessing pipeline. Reimplemented part of business logic with C++, 
+  fixed some architectural problems, speedup on 5-10ms on the affected slice of traffic.}
   
   \cvinfobox{Google}{07.2018-10.2018 | Software Engineering Intern}
   {Worked on Shopping Data Quality team. Primary C++, MapReduce, Stubby.
@@ -93,7 +88,7 @@
   
    \cvinfobox{Yandex Ads}{03.2017-06.2018 | Junior Backend Developer}
   {Designed and implemented distributed log collection and event
-   plotting system using internal technologies, including YT — Bigtable-like
+   plotting system using internal technologies, including YTsaurus — Bigtable-like
    storage with MapReduce framework on top of it. \\
    Used coroutine-based web server and batch requests in order
    to handle required RPS on a small number of servers and not to overload
@@ -109,15 +104,6 @@
    We combined SQLite parser and execution engine with Tarantool internal structures (B+*-tree).\\
    Fixed some bugs in Tarantool test engine.\\
    Added intrusive heap to Tarantool data structures library.}
-\end{cvsection}
-
-\begin{cvsection}{COMPETITIVE PROGRAMMING}
-  \cvinfobox{Russian National Olympiad in Informatics}
-  {2012 | prizewinner}
-  {}
-  \cvinfobox{Russian National Olympiad in Informatics}
-  {2011 | prizewinner}
-  {}
 \end{cvsection}
 
 \end{rightcolumn}
