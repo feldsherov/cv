@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-xelatex cv.tex
+xelatex cv.tex --halt-on-error

@@ -5,11 +5,11 @@
 \LoadClass{article}
 
 \RequirePackage{fontspec}
-\setmainfont[
+\setmainfont[ Path = helvetica/,
    ItalicFont     = HelveticaNeue-Italic,
    BoldFont       = HelveticaNeue-Bold,
    BoldItalicFont = HelveticaNeue-BoldItalic]{HelveticaNeue}
-\newfontfamily\HLight[
+\newfontfamily\HLight[ Path = helvetica/,
    ItalicFont     = HelveticaNeue-Italic,
    BoldFont       = HelveticaNeue-UltraLight,
    BoldItalicFont = HelveticaNeue-UltraLightItalic]{HelveticaNeue-Light}
